@@ -50,9 +50,10 @@ Thumbs.db
 /bitrix/php_interface/dbconn.php
 /bitrix/*
 !/bitrix/components/
+!/bitrix/php_interface/
 /bitrix/components/bitrix/*
 
-!/bitrix/php_interface/
+
 
 
 #А так можно заигнорить все модули, кроме какого-то одного (звездочка = обязательна в конце)
