@@ -8,4 +8,10 @@ function FunctionName(params)
 	//code
 }
 */
+
+Bitrix\Main\Loader::registerAutoLoadClasses(null, [
+    'classes\SypexGeo' => '/local/classes/SypexGeo.php'
+]);
+
+
 ?>

@@ -1,0 +1,151 @@
+/*******************
+Главный слайдер
+*******************/
+.product_slider {
+  top: -50px;
+  position: relative;
+}
+@media screen and (min-width: 10px) and (max-width: 767px) {
+  .product_slider {
+    top: auto;
+  }
+}
+.product_slider .product {
+  background-color: #f5f5f6;
+  height: 100% !important;
+}
+.product_slider .product .item {
+  padding: 24px 16px 0 16px;
+  margin: 0 0 auto;
+}
+.product_slider .product .item .title {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  height: 50px;
+  font-weight: 700;
+  text-align: left;
+}
+.product_slider .product .item .image img {
+  position: absolute;
+  object-fit: none;
+  min-height: 100px;
+  right: 15px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.product_slider .product .item .tekst {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 65px 15px 53px 15px;
+  color: #787f8b;
+  text-align: left;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.product_slider .product .item .tekst::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(180deg, transparent, #f5f5f6 50%);
+}
+.product_slider .product .item .button {
+  display: flex;
+  align-items: center;
+}
+.product_slider .product .item .button {
+  padding: 20px 26px;
+  border-top: 1px dashed #d5d7dc;
+  color: #787f8b;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+.product_slider .product .item .button span {
+  margin-left: auto;
+}
+.product_slider .product .hover {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px 16px 0 16px;
+}
+.product_slider .product .hover::before {
+  content: "";
+  background: rgba(236, 80, 76, 0.8);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.product_slider .product:hover .hover {
+  z-index: 100;
+  opacity: 1 !important;
+}
+
+.product_slider .product .hover .title {
+  height: 50px;
+  color: #fce300;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product_slider .product .hover .tekst {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 20px;
+  color: #fff;
+  text-align: left;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.product_slider .product .hover .tekst::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(180deg, transparent, rgba(236, 80, 76, 0.8) 50%);
+}
+.product_slider .product .hover .button {
+  border: none;
+  background: #fce300;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  z-index: 1;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+}
+.product_slider .product .hover .button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 20px 26px;
+  color: #000;
+}
+.product_slider .product .hover .button span {
+  margin-left: auto;
+}
